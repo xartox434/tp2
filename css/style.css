@@ -1,0 +1,116 @@
+.grille{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 0.75fr 1fr 1fr 1.13fr 1.13fr 0.65fr;
+    grid-template-areas:
+    "navigateur navigateur navigateur navigateur"
+    "main main main aside"
+    "main main main aside"
+    "figure article article aside"
+    "figure article article aside"
+    "footer footer footer footer"
+    ;
+    height: 100%;
+    width: 100%;
+    
+}
+
+aside{
+    padding-left: 10px;
+    grid-area: aside;
+    background-color: rgb(0, 123, 255);
+}
+
+main{
+grid-area: main;
+padding-right: 10px;
+padding-left: 10px;
+}
+
+footer{
+grid-area: footer;
+background-color: gray;
+text-align: right;
+padding-right: 10px;
+font-size: 15px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+nav{
+grid-area: navigateur;
+background-color: black;
+padding-top: 10px;
+
+
+}
+
+article{
+grid-area: article;
+padding-right: 10px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+figure{
+grid-area: figure;
+background-color: white;
+border: solid black 1px;
+padding: 10px;
+width: fit-content;
+float: left;
+max-height: 230px;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+img{
+    max-width: 350px;
+    margin: auto;
+   }
+
+   .droite{
+   float: right;
+   padding-right: 10px;
+padding-left: 10px;
+color: beige;
+text-decoration: none;
+ }
+
+ .gauche{
+    padding-right: 10px;
+    padding-left: 10px;
+    color: beige;
+    text-decoration: none;
+ }
+
+ #minecraft{
+    padding-left: 10px;
+    grid-area: aside;
+    background-color:rgb(139,69,19)
+ }
+ #footerminecraft{
+    grid-area: footer;
+background-color: black;
+text-align: right;
+padding-right: 10px;
+font-size: 15px;
+font-family: 'Times New Roman', Times, serif;
+color: beige;
+ }
+ #navminecraft{
+    grid-area: navigateur;
+    background-color: green;
+    padding-top: 10px;
+ }
+
+ a:hover{
+    color: blue;
+ }
