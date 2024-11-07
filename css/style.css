@@ -49,7 +49,6 @@ padding-top: 10px;
 article{
 grid-area: article;
 padding-right: 10px;
-font-family: 'Times New Roman', Times, serif;
 }
 
 figure{
@@ -113,4 +112,8 @@ color: beige;
 
  a:hover{
     color: blue;
+ }
+
+ .titreimage{
+   font-family: 'Times New Roman', Times, serif;
  }
