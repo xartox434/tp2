@@ -1,0 +1,100 @@
+a:hover{
+    color: blue;
+ }
+ .droite{
+    float: right;
+    padding-right: 10px;
+ padding-left: 10px;
+ color: beige;
+ text-decoration: none;
+  }
+ 
+  .gauche{
+     padding-right: 10px;
+     padding-left: 10px;
+     color: beige;
+     text-decoration: none;
+  }
+
+  nav{
+    grid-area: navigateur;
+    background-color: black;
+    padding-top: 10px;
+  }
+  .grille{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+    "navigateur navigateur navigateur "
+    "figure1 figure2 figure3 "
+    "figure4 figure5 figure6 "
+    "figure7 figure8 figure9 "
+    "footer footer footer "
+    ;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+footer{
+    grid-area: footer;
+    background-color: gray;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    img{
+        max-height: 350px;
+        max-width: 350px;
+        margin: auto;
+        height: 350px;
+        width: 350px;
+       }
+
+
+       #f1{
+        grid-area: figure1;
+       }
+       #f2{
+        grid-area: figure2;
+       }
+       #f3{
+        grid-area: figure3;
+       }
+       #f4{
+        grid-area: figure4;
+       }
+       #f5{
+        grid-area: figure5;
+       }
+       #f6{
+        grid-area: figure6;
+       }
+       #f7{
+        grid-area: figure7;
+       }
+       #f8{
+        grid-area: figure8;
+       }
+       #f9{
+        grid-area: figure9;   
+       }
+figure{
+    padding-left: 30px;
+}
+
+img:hover{
+    transition: transform 0.3s, filter 0.3s;
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
