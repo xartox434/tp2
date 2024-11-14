@@ -25,7 +25,7 @@ a:hover{
     border: 1px solid black;
   }
   .grille{
-    background-image: url('imagesKB2/107794948_gettyimages-681946576.jpg');
+    background-image: url('../imagesKB2/107794948_gettyimages-681946576.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     display: grid;
